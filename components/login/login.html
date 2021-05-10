@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="box">
+    <h2>Login</h2>
+<form ng-submit="formSubmit()" class="form" name="myForm">
+    <div class="inputBox">
+    <input type="text" class="form-control" ng-model="username" placeholder="username" required/>
+    </div>
+    <div class="inputBox">
+    <input type="password" class="form-control" ng-model="password" placeholder="password" required=""/>
+    </div>
+    <button type="submit" class="btn btn-info" ng-click="postdata()">Login</button><br>
+    <span class="text-danger" style="color:red">{{ error }}</span>
+</form>
+</div>
+</body>
+</html>
