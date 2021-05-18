@@ -3,11 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Home Page</title>
+    <link rel="stylesheet" href="../../assets/css/home.css">
 </head>
 <body>
-<div class="col-md-12" style="width:500px;">
+<div>
     <h2>Welcome To ....! marketplace@martcart.pk </h2>
-
+    <div align="center" ><a href="javascript:logout()" class="btn">Logout</a></div>
 </div>
 </body>
+<script>
+    function logout() {
+        window.location.href = 'http://localhost:63342/API-BasedLogin-AngularJS/index.html?_ijt=at10v9jtm2kvc8k7hef0nehtdp#/login';
+        sessionStorage.removeItem("authdata");
+    }
+</script>
 </html>

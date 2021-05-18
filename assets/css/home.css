@@ -1,0 +1,29 @@
+
+body{
+    background-image: url(http://ppcdn.500px.org/75319705/1991f76c0c6a91ae1d23eb94ac5c7a9f7e79c480/2048.jpg) ;
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    background-color: #999;
+}
+a{
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    padding: 1em 1.5em;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+a:hover {
+    background-color: cornflowerblue;
+}
+h2{
+    color: white;
+    margin-top: 13%;
+    margin-left: 30%;
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
