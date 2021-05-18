@@ -13,10 +13,14 @@ app.controller('loginController', function($scope,$http,$rootScope,$window) {
         });
         post.success(function (data) {
             window.location='components/home/home.html';
-                sessionStorage.setItem("authdata", JSON.stringify(data.token));
-             });
+               sessionStorage.setItem("authdata",JSON.stringify(data.token));
+        });
         post.error(function () {
             alert("Somthing went wrong");
          });
+    }
+    $scope.logout = function(){
+        window.location.href = 'http://localhost:63342/API-BasedLogin-AngularJS/index.html?_ijt=at10v9jtm2kvc8k7hef0nehtdp#/login';
+        $window.sessionStorage.removeItem("authdata");
     }
 });
